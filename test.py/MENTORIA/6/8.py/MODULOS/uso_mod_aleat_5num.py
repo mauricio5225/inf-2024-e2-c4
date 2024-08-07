@@ -12,3 +12,4 @@ while respuesta.upper() == 'S':
     respuesta = input("¿Querés seguir generando números aleatorios? S/N: ").upper()
 
 print("¡Gracias por jugar con el generador de números del Info!")
+print("Gracias totales")
