@@ -1,0 +1,26 @@
+# al pasarle una tupla a la funcion, debe devolver una lista
+# Restriciones, no usar la funcion list()
+
+
+def to_list(tupla):
+    # Inicializamos una lista vacía
+    lista = []
+    
+    # Iteramos sobre los elementos de la tupla y los agregamos a la lista
+    for elemento in tupla:
+        lista.append(elemento)
+    
+    return lista
+
+# Ejemplo de uso
+mi_tupla = (1, 2, 3, 4)
+mi_lista = to_list(mi_tupla)
+print(mi_lista)  # Salida: [1, 2, 3, 4]
+
+
+
+#Angel
+#0:47:11
+def to_list(tupla):
+    lista = list(tupla)
+    return lista
