@@ -11,7 +11,7 @@ def seleccion(lista_desordenada):
     return lista_desordenada
 
 # Ejemplo de uso (uso de sorted)
-lista = [64, 25, 12, 22, 11]
+lista = [64, 25, 12, 22, 11,236,456]
 print(seleccion(lista))
 
 # 2. Ordenamiento por Inserción
@@ -39,6 +39,23 @@ def intercambio(lista_desordenada):
     return lista_desordenada
 
 # Ejemplo de uso
-lista = [64, 34, 25, 12, 22,1000, 11, 90]
+lista = [64,2500, 34, 25, 12, 22,1000, 11, 90]
 print(intercambio(lista))
    
+# lucas ejenmplo
+#Lucas M. Rios
+#15:22
+
+
+
+def selection_sort(vector):
+    nb = len(vector)
+    for actual in range(0, nb):
+        mas_pequeno = actual
+        for j in range(actual + 1, nb):
+            if vector[j] < vector[mas_pequeno]:
+                mas_pequeno = j
+        if mas_pequeno != actual:
+            temp = vector[actual]
+            vector[actual] = vector[mas_pequeno]
+            vector[mas_pequeno] = temp
