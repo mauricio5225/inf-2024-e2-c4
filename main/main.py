@@ -34,11 +34,11 @@ def fetch_query(connection, query):
     except Error as e:
         print(f"The error '{e}' occurred")
 
-# Example usage
+# Ejemplo de uso
 if __name__ == "__main__":
     connection = create_connection("localhost", "root", "root", "test")
 
-    # Example query to create a table
+    # Consulta de ejemplo para crear una tabla
     create_table_query = """
     CREATE TABLE IF NOT EXISTS users (
       id INT AUTO_INCREMENT PRIMARY KEY,
@@ -50,14 +50,14 @@ if __name__ == "__main__":
     """
     execute_query(connection, create_table_query)
 
-    # Example query to insert data
+    # Consulta de ejemplo para insertar datos
     insert_query = """
     INSERT INTO users (name, age, gender, nationality)
     VALUES ('Nico Burgos', 22, 'Male', 'Argentino');
     """
     execute_query(connection, insert_query)
 
-    # Example query to fetch data
+    # Consulta de ejemplo para obtener datos
     select_query = "SELECT * FROM users;"
     users = fetch_query(connection, select_query)
 
